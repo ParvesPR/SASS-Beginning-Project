@@ -14,5 +14,22 @@ $font-weights: (
 body {
   background-color: $primary-color;
   color: $text-color;
-  font-weight: map-get($font-weights , bold);
+}
+
+.main {
+  width: 70%;
+  margin: 0 auto;
+
+  #{&}__para1 {
+    font-weight: map-get($font-weights , normal);
+    font-size: $font-size;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  #{&}__para2 {
+    font-weight: map-get($font-weights , bold);
+  }
 }
