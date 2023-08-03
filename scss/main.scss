@@ -1,5 +1,9 @@
 @import "./index";
 
+@function weights($weight-name) {
+  @return map-get($font-weights , $weight-name );
+}
+
 body {
   background-color: $primary-color;
   color: $text-color;
@@ -19,6 +23,6 @@ body {
   }
 
   #{&}__para2 {
-    font-weight: map-get($font-weights , bold);
+    font-weight: weights(bold);
   }
 }
