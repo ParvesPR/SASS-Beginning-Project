@@ -12,8 +12,12 @@ body {
 }
 
 .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 70%;
   margin: 0 auto;
+  padding: 50px 0px;
 }
 .main .main__para1 {
   font-weight: 400;

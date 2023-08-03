@@ -4,14 +4,22 @@
   @return map-get($font-weights , $weight-name );
 }
 
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
   background-color: $primary-color;
   color: $text-color;
 }
 
 .main {
+  @include flexCenter();
   width: 70%;
   margin: 0 auto;
+  padding: $padding;
 
   #{&}__para1 {
     font-weight: map-get($font-weights , normal);
