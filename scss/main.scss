@@ -41,7 +41,10 @@ body {
     }
   }
 
+  // #{&}__para2 {
+  //   font-weight: weights(bold);
+  // }
   #{&}__para2 {
-    font-weight: weights(bold);
+    @extend .main__para1
   }
 }
