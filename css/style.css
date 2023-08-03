@@ -11,6 +11,11 @@ body {
   color: #fff;
 }
 
+.light {
+  background-color: white;
+  color: black;
+}
+
 .main {
   display: flex;
   align-items: center;

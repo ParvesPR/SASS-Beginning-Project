@@ -10,9 +10,20 @@
   justify-content: center;
 }
 
+@mixin theme($light-theme: true) {
+  @if $light-theme {
+    background-color: lighten($primary-color, 100%);
+    color: darken($text-color, 100%);
+  }
+}
+
 body {
   background-color: $primary-color;
   color: $text-color;
+}
+
+.light {
+  @include theme(true)
 }
 
 .main {
